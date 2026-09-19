@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #18171A;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F4EFEA;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D5CCC0;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A84826;
+  }
+}
+
+/* Typography styles */
+.font-display {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Robust, High-Contrast Button Classes */
+.btn-primary {
+  background-color: #A84826 !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(168, 72, 38, 0.35);
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #8C3717 !important;
+  box-shadow: 0 6px 20px rgba(168, 72, 38, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF !important;
+  color: #18171A !important;
+  border: 1.5px solid #D8D0C5 !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: #F4EFEA !important;
+  border-color: #A84826 !important;
+  color: #A84826 !important;
+  transform: translateY(-1px);
+}
+
+.btn-dark {
+  background-color: #18171A !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(24, 23, 26, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+.btn-dark:hover {
+  background-color: #2E2B33 !important;
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp {
+  background-color: #16A34A !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+.btn-whatsapp:hover {
+  background-color: #15803D !important;
+}
+
+/* Glass and Navigation styles */
+.glass-nav-light {
+  background: rgba(250, 248, 245, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid #E5DFD5;
+}
+
+.bg-canvas-pattern {
+  background-image: radial-gradient(rgba(24, 23, 26, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
